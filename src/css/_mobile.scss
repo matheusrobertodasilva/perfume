@@ -1,0 +1,86 @@
+@import "./base.scss";
+
+
+.card__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 50% auto;
+    width: 40vh;
+    border-radius: 10px;
+
+    .card__image--desktop{
+        display: none;
+    }
+    
+    .card__image--mobile{
+        border-radius: 10px 10px 0px 0px;
+        width: 40vh;
+    }
+}
+
+.card__content{
+    margin: 20px;
+
+    .content__subtitle{
+        letter-spacing: 6px;
+        font-size: 10px;
+
+    }
+
+    .content__title{
+        color: $Very-dark-blue;
+        font-size: 30px;
+        font-family: $frauces;
+        margin: 15px 0;
+    }
+
+    .content__discrition{
+        line-height: 25px;
+        
+    }
+}
+
+.card__value{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    .value__first{
+        color: $Dark-cyan;
+        font-size: 25px;
+        font-family: $frauces;
+
+    }
+
+    .value__second{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+}
+
+%cart{
+    background: url(../img/icon-cart.svg) no-repeat 40px 10px;
+}
+
+%cart{
+    background: url(../img/icon-cart.svg) no-repeat 75px;
+}
+
+.card__button{
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    background-color: $Dark-cyan;
+    padding: 12px 100px;
+    margin-top: 10px;
+
+    &:hover{
+        background-color: $Very-dark-blue;
+        transition: 1s;
+    }
+
+    @extend %cart
+}

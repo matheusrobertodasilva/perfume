@@ -1,63 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 body {
   background-color: hsl(30, 38%, 92%);
   color: hsl(228, 12%, 48%);
   font-family: "Montserrat", sans-serif;
+  font-size: 12px;
 }
 
 .card__container {
-  align-items: center;
-  background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 70%;
+  align-items: center;
+  background-color: white;
   margin: 50% auto;
+  width: 40vh;
   border-radius: 10px;
 }
-.card__container .card__image {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
+.card__container .card__image--desktop {
+  display: none;
 }
-.card__container .card__content {
-  padding: 20px;
+.card__container .card__image--mobile {
+  border-radius: 10px 10px 0px 0px;
+  width: 40vh;
 }
-.card__container .card__content .content__subtitle {
+
+.card__content {
+  margin: 20px;
+}
+.card__content .content__subtitle {
+  letter-spacing: 6px;
   font-size: 10px;
-  letter-spacing: 5px;
 }
-.card__container .card__content .content__title {
+.card__content .content__title {
   color: hsl(212, 21%, 14%);
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Fraunces", serif;
-  font-weight: 700;
-  margin-top: 10px;
+  margin: 15px 0;
 }
-.card__container .card__content .content__discrition {
-  font-size: 11px;
-  margin: 2vh 0;
-  padding: 0vh 2px;
-  line-height: 1.5;
+.card__content .content__discrition {
+  line-height: 25px;
 }
-.card__container .card__value {
+
+.card__value {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
-.card__container .card__value .value__first {
+.card__value .value__first {
   color: hsl(158, 36%, 37%);
-  font-family: "Fraunces", serif;
   font-size: 25px;
-  font-weight: 700;
-  margin-right: 10px;
+  font-family: "Fraunces", serif;
 }
-.card__container .card__button {
-  background-color: hsl(158, 36%, 37%);
+.card__value .value__second {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.card__button {
+  background: url(../img/icon-cart.svg) no-repeat 40px 10px;
+}
+
+.card__button {
+  background: url(../img/icon-cart.svg) no-repeat 75px;
+}
+
+.card__button {
+  color: white;
   border-style: none;
   border-radius: 10px;
-  color: hsl(0, 0%, 100%);
-  font-weight: 700;
-  padding: 1vh 10vh;
-  margin-bottom: 10px;
+  background-color: hsl(158, 36%, 37%);
+  padding: 12px 100px;
+  margin-top: 10px;
+}
+.card__button:hover {
+  background-color: hsl(212, 21%, 14%);
+  transition: 1s;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+@media (min-width: 1440px) {
+  .card__container {
+    display: flex;
+    flex-direction: row;
+    width: 59vh;
+  }
+  .card__container .card__image--mobile {
+    display: none;
+  }
+  .card__container .card__image--desktop {
+    display: block;
+    width: 32vh;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .card__content {
+    margin: 12px 20px;
+  }
+  .card__button {
+    background: url(../img/icon-cart.svg) no-repeat 45px;
+  }
+  .card__button {
+    background-color: hsl(158, 36%, 37%);
+    padding: 12px 66px;
+  }
 }/*# sourceMappingURL=style.css.map */

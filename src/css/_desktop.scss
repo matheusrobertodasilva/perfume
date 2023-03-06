@@ -1,0 +1,31 @@
+@import "./base";
+
+@media (min-width: 1440px){
+    .card__container {
+        display: flex;
+        flex-direction: row;
+        width: 59vh;
+
+        .card__image--mobile{
+            display: none;
+        }
+        .card__image--desktop{
+            display: block;
+            width: 32vh;
+            border-radius: 10px 0px 0px 10px;
+        }
+    }
+
+    .card__content{
+        margin: 12px 20px;
+    }
+
+    %cart{
+        background: url(../img/icon-cart.svg) no-repeat 45px;
+    }
+
+    .card__button{
+        background-color: $Dark-cyan;
+        padding: 12px 66px;
+    }
+}
