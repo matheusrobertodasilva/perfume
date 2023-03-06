@@ -14,8 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  margin: 50% auto;
-  width: 40vh;
+  margin: 10% auto;
+  max-width: 300px;
   border-radius: 10px;
 }
 .card__container .card__image--desktop {
@@ -23,7 +23,7 @@ body {
 }
 .card__container .card__image--mobile {
   border-radius: 10px 10px 0px 0px;
-  width: 40vh;
+  width: 100%;
 }
 
 .card__content {
@@ -64,7 +64,7 @@ body {
 }
 
 .card__button {
-  background: url(../img/icon-cart.svg) no-repeat 75px;
+  background: url(../img/icon-cart.svg) no-repeat 60px;
 }
 
 .card__button {
@@ -72,7 +72,7 @@ body {
   border-style: none;
   border-radius: 10px;
   background-color: hsl(158, 36%, 37%);
-  padding: 12px 100px;
+  padding: 12px 90px;
   margin-top: 10px;
 }
 .card__button:hover {
@@ -91,7 +91,7 @@ body {
   .card__container {
     display: flex;
     flex-direction: row;
-    width: 59vh;
+    max-width: 535px;
   }
   .card__container .card__image--mobile {
     display: none;
